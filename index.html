@@ -1,0 +1,684 @@
+<!DOCTYPE html>
+<html>                                               
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+
+		<title>LIGHTFRAME</title>
+
+    <!-- <link rel="stylesheet" href="../build/css/styles.css"> -->
+
+    <link rel="stylesheet" href="../css/lightframe.css">
+
+		<script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+
+  <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+
+
+<script src="../build/js/functions.js"></script>
+<!-- cheap reset, some cheap styles for demo -->
+<style type="text/css">
+body {margin: 0;background: grey;}
+h2 { text-align: center; }
+p {background-color: pink;}
+
+/*The Modified Column width - modfications are done via multiple classes. Refer to read me for more info*/
+.lf-menu__logo { font-size: 65px; color: #fff; font-family: sans-serif; }
+.col-flex-ex2 {width: 200px;}
+.footer-text{ color: #fff; font-family: sans-serif; }
+</style>
+
+	</head>
+
+	<body>
+<div class="page-wrapper">
+
+
+	<nav class="lf-menu">
+		<h1 class="lf-menu__logo">LIGHTFRAME</h1>	
+		<ul class="lf-menu__items lf-menu__items--right">
+			<li><a href="">Item 1</a></li>
+			<li><a href="">Item 2</a></li>
+			<li><a href="">Item 3</a></li>
+			<li><a href="">Item 4</a></li>
+		</ul>
+	</nav>
+
+	   
+	   <div class="container">
+	   <h2>Full Container - Testing the Build</h2>
+	   	<div class="row">
+	   		<div class="col-full">
+	   			<div class="content">
+	   			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	   			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	   			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	   			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	   			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	   			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	   			</div>
+	   		</div>
+	   	</div>
+	   </div>
+
+
+	   <div class="container">
+	   <h2>Half Container</h2>
+	   	<div class="row">
+	   		<div class="col-half">
+	   			<div class="content">
+	   			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	   			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	   			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	   			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	   			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	   			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	   			</div>
+	   		</div>
+	   		<div class="col-half">
+	   			<div class="content">
+	   			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	   			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	   			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	   			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	   			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	   			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	   			</div>
+	   		</div>
+	   	</div>
+	   </div>
+
+	   <div class="container">
+	   <h2>Third Container</h2>
+	   	<div class="row">
+	   		<div class="col-third">
+	   			<div class="content">
+	   			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	   			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	   			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	   			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	   			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	   			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	   			</div>
+	   		</div>
+	   		<div class="col-third">
+	   			<div class="content">
+	   			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	   			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	   			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	   			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	   			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	   			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	   			</div>
+	   		</div>
+	   		<div class="col-third">
+	   			<div class="content">
+	   			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	   			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	   			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	   			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	   			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	   			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	   			</div>
+	   		</div>
+	   	</div>
+	   </div>
+
+	   <div class="container">
+	   <h2>Quarter Container</h2>
+	   	<div class="row">
+	   		<div class="col-quarter">
+	   			<div class="content">
+	   			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	   			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	   			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	   			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	   			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	   			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	   			</div>
+	   		</div>
+	   		<div class="col-quarter">
+	   			<div class="content">
+	   			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	   			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	   			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	   			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	   			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	   			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	   			</div>
+	   		</div>
+	   		<div class="col-quarter">
+	   			<div class="content">
+	   			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	   			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	   			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	   			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	   			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	   			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	   			</div>
+	   		</div>
+	   		<div class="col-quarter">
+	   			<div class="content">
+	   			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	   			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	   			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	   			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	   			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	   			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	   			</div>
+	   		</div>
+	   	</div>
+	   </div>
+
+
+	   <div class="container">
+	   <h2>Col flex Example #1</h2>
+	   	  <div class="row row-flex">
+	   		<div class="col-flex">
+	   			<div class="content">
+	   			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	   			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	   			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	   			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	   			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	   			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	   			</div>
+	   		</div>
+	   		<div class="col-flex">
+	   			<div class="content">
+	   			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	   			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	   			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	   			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	   			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	   			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	   			</div>
+	   		</div>
+	   		<div class="col-flex">
+	   			<div class="content">
+	   			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	   			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	   			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	   			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	   			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	   			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	   			</div>
+	   		</div>
+	   		<div class="col-flex">
+	   			<div class="content">
+	   			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	   			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	   			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	   			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	   			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	   			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	   			</div>
+	   		</div>
+	   		<div class="col-flex">
+	   			<div class="content">
+	   			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	   			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	   			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	   			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	   			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	   			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	   			</div>
+	   		</div>
+	   		<div class="col-flex">
+	   			<div class="content">
+	   			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	   			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	   			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	   			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	   			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	   			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	   			</div>
+	   		</div>
+	   		<div class="col-flex">
+	   			<div class="content">
+	   			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	   			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	   			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	   			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	   			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	   			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	   			</div>
+	   		</div>
+	   		<div class="col-flex">
+	   			<div class="content">
+	   			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	   			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	   			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	   			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	   			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	   			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	   			</div>
+	   		</div>
+	   		<div class="col-flex">
+	   			<div class="content">
+	   			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	   			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	   			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	   			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	   			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	   			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	   			</div>
+	   		</div>
+	   		<div class="col-flex">
+	   			<div class="content">
+	   			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	   			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	   			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	   			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	   			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	   			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	   			</div>
+	   		</div>
+	   		<div class="col-flex">
+	   			<div class="content">
+	   			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	   			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	   			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	   			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	   			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	   			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	   			</div>
+	   		</div>
+	   		<div class="col-flex">
+	   			<div class="content">
+	   			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	   			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	   			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	   			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	   			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	   			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	   			</div>
+	   		</div>
+	   	</div>
+	   	<div class="row row-flex">
+	   		<div class="col-flex">
+	   			<div class="content">
+	   			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	   			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	   			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	   			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	   			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	   			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	   			</div>
+	   		</div>
+	   		<div class="col-flex">
+	   			<div class="content">
+	   			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	   			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	   			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	   			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	   			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	   			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	   			</div>
+	   		</div>
+	   		<div class="col-flex">
+	   			<div class="content">
+	   			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	   			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	   			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	   			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	   			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	   			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	   			</div>
+	   		</div>
+	   		<div class="col-flex">
+	   			<div class="content">
+	   			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	   			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	   			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	   			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	   			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	   			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	   			</div>
+	   		</div>
+	   		<div class="col-flex">
+	   			<div class="content">
+	   			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	   			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	   			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	   			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	   			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	   			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	   			</div>
+	   		</div>
+	   		<div class="col-flex">
+	   			<div class="content">
+	   			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	   			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	   			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	   			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	   			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	   			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	   			</div>
+	   		</div>
+	   		<div class="col-flex">
+	   			<div class="content">
+	   			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	   			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	   			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	   			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	   			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	   			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	   			</div>
+	   		</div>
+	   		<div class="col-flex">
+	   			<div class="content">
+	   			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	   			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	   			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	   			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	   			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	   			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	   			</div>
+	   		</div>
+	   		<div class="col-flex">
+	   			<div class="content">
+	   			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	   			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	   			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	   			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	   			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	   			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	   			</div>
+	   		</div>
+	   		<div class="col-flex">
+	   			<div class="content">
+	   			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	   			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	   			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	   			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	   			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	   			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	   			</div>
+	   		</div>
+	   		<div class="col-flex">
+	   			<div class="content">
+	   			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	   			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	   			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	   			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	   			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	   			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	   			</div>
+	   		</div>
+	   		<div class="col-flex">
+	   			<div class="content">
+	   			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	   			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	   			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	   			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	   			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	   			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	   			</div>
+	   		</div>
+	   	</div>
+	   </div>
+
+	   <div class="container">
+	   <h2>Col flex Example #2</h2>
+	   	  <div class="row row-flex">
+	   		<div class="col-flex col-flex-ex2">
+	   			<div class="content">
+	   			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	   			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	   			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	   			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	   			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	   			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	   			</div>
+	   		</div>
+	   		<div class="col-flex col-flex-ex2">
+	   			<div class="content">
+	   			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	   			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	   			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	   			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	   			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	   			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	   			</div>
+	   		</div>
+	   		<div class="col-flex col-flex-ex2">
+	   			<div class="content">
+	   			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	   			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	   			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	   			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	   			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	   			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	   			</div>
+	   		</div>
+	   		<div class="col-flex col-flex-ex2">
+	   			<div class="content">
+	   			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	   			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	   			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	   			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	   			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	   			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	   			</div>
+	   		</div>
+	   		<div class="col-flex col-flex-ex2">
+	   			<div class="content">
+	   			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	   			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	   			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	   			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	   			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	   			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	   			</div>
+	   		</div>
+	   		<div class="col-flex col-flex-ex2">
+	   			<div class="content">
+	   			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	   			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	   			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	   			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	   			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	   			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	   			</div>
+	   		</div>
+	   		<div class="col-flex col-flex-ex2">
+	   			<div class="content">
+	   			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	   			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	   			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	   			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	   			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	   			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	   			</div>
+	   		</div>
+	   		<div class="col-flex col-flex-ex2">
+	   			<div class="content">
+	   			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	   			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	   			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	   			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	   			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	   			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	   			</div>
+	   		</div>
+	   		<div class="col-flex col-flex-ex2">
+	   			<div class="content">
+	   			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	   			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	   			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	   			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	   			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	   			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	   			</div>
+	   		</div>
+	   		<div class="col-flex col-flex-ex2">
+	   			<div class="content">
+	   			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	   			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	   			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	   			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	   			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	   			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	   			</div>
+	   		</div>
+	   		<div class="col-flex col-flex-ex2">
+	   			<div class="content">
+	   			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	   			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	   			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	   			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	   			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	   			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	   			</div>
+	   		</div>
+	   		<div class="col-flex col-flex-ex2">
+	   			<div class="content">
+	   			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	   			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	   			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	   			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	   			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	   			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	   			</div>
+	   		</div>
+	   	</div>
+	   	<div class="row row-flex">
+	   		<div class="col-flex col-flex-ex2">
+	   			<div class="content">
+	   			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	   			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	   			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	   			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	   			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	   			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	   			</div>
+	   		</div>
+	   		<div class="col-flex col-flex-ex2">
+	   			<div class="content">
+	   			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	   			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	   			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	   			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	   			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	   			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	   			</div>
+	   		</div>
+	   		<div class="col-flex col-flex-ex2">
+	   			<div class="content">
+	   			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	   			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	   			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	   			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	   			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	   			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	   			</div>
+	   		</div>
+	   		<div class="col-flex col-flex-ex2">
+	   			<div class="content">
+	   			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	   			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	   			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	   			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	   			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	   			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	   			</div>
+	   		</div>
+	   		<div class="col-flex col-flex-ex2">
+	   			<div class="content">
+	   			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	   			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	   			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	   			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	   			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	   			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	   			</div>
+	   		</div>
+	   		<div class="col-flex col-flex-ex2">
+	   			<div class="content">
+	   			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	   			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	   			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	   			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	   			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	   			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	   			</div>
+	   		</div>
+	   		<div class="col-flex col-flex-ex2">
+	   			<div class="content">
+	   			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	   			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	   			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	   			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	   			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	   			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	   			</div>
+	   		</div>
+	   		<div class="col-flex col-flex-ex2">
+	   			<div class="content">
+	   			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	   			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	   			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	   			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	   			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	   			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	   			</div>
+	   		</div>
+	   		<div class="col-flex col-flex-ex2">
+	   			<div class="content">
+	   			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	   			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	   			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	   			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	   			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	   			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	   			</div>
+	   		</div>
+	   		<div class="col-flex col-flex-ex2">
+	   			<div class="content">
+	   			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	   			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	   			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	   			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	   			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	   			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	   			</div>
+	   		</div>
+	   		<div class="col-flex col-flex-ex2">
+	   			<div class="content">
+	   			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	   			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	   			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	   			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	   			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	   			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	   			</div>
+	   		</div>
+	   		<div class="col-flex col-flex-ex2">
+	   			<div class="content">
+	   			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	   			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	   			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	   			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	   			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	   			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	   			</div>
+	   		</div>
+	   	</div>
+	   </div>
+
+	   
+
+		<div class="lf-footer">
+		<span class="footer-text">2016 Lightframe</span>
+			<ul class="lf-menu__items--stacked lf-menu__items--right">
+				<li><a href="">Item 1</a></li>
+				<li><a href="">Item 2</a></li>
+				<li><a href="">Item 3</a></li>
+				<li><a href="">Item 4</a></li>
+			</ul>
+		</div>
+
+
+	</div>
+</body>
+</html>

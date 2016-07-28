@@ -1,0 +1,18 @@
+{
+  "author": "Connor Harper",
+  "name": "lightframe",
+  "description": "CSS grid system for building web pages",
+  "version": "0.8",
+  "main": "lightframe.css",
+
+  "devDependencies": {
+    "browser-sync": "^2.11.1",
+    "gulp": "^3.9.1",
+    "gulp-clean-css": "^2.0.3",
+    "gulp-cssmin": "^0.1.7",
+    "gulp-ruby-sass": "^2.0.6",
+    "gulp-sass": "^2.2.0",
+    "gulp-uglify": "^1.5.3"
+  }
+  
+}

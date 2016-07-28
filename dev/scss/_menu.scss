@@ -1,0 +1,51 @@
+//menu/navigation
+
+.lf-menu {
+	top: 0;
+	left: 0;
+	width: 100%;
+	background: $menu-background;
+}
+
+.lf-menu__logo {
+	display: inline;
+}
+
+.lf-menu__items {
+	li {
+		display: inline-block;
+		list-style-type: none;
+		padding: $menu-padding;
+		margin-left: $menu-margin;
+	}
+}
+
+.lf-menu__items--right {
+	float: right;
+}
+
+.lf-menu__items--left {
+	float: left;
+}
+
+.lf-menu__items--underlogo {
+	float: none;
+}
+
+.lf-menu__items--stacked {
+	display: block;
+	list-style-type: none;
+	a {
+		text-decoration: none;
+		color: $menu-item-color;
+		padding: $menu-padding;
+	}
+}
+
+@media (max-width: 1024px) {
+
+}
+
+@media (max-width: 767px) {
+	
+}

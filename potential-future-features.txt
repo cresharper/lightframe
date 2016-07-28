@@ -1,0 +1,24 @@
+Potential future features:
+
+• Angled columns for more “artsy websites" Sonething like:
+
+.col-angle-down {
+	-webkit-transform: $col-angle-down;
+	-ms-transform: $col-angle-down;
+	-moz-transform: $col-angle-down;
+	-o-transform: $col-angle-down;
+	transform: $col-angle-down;
+	@extend .col;
+	padding: 0; // can customize here
+}
+
+.col-angle-up {
+	-webkit-transform: $col-angle-up;
+	-ms-transform: $col-angle-up;
+	-moz-transform: $col-angle-up;
+	-o-transform: $col-angle-up;
+	transform: $col-angle-up;
+	@extend .col;
+	padding: 0; //can customize here
+}
+

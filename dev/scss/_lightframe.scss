@@ -1,0 +1,108 @@
+// GRID SYSTEM
+
+.col {
+	float: left;
+	padding-bottom: 4rem;
+
+}
+
+.wrapper {
+	padding: 20px;
+}
+
+.page-wrapper{width: 100%; position: absolute;}
+
+.container {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.container-morethan-4 {
+	-webkit-flex-flow: row wrap;
+}
+
+.row {
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.row-morethan-4 {
+	display: flex;
+	-webkit-flex-flow: row wrap;
+}
+
+.content {
+	padding: 30px;
+}
+
+.col-full {
+	width: 100%;
+	@extend .col;
+}
+
+.col-half {
+	width: 50%;
+	@extend .col;
+}
+
+.col-third {
+	width: 33.33333333%;
+	@extend .col;
+}
+
+.col-quarter {
+	width: 25%;
+	@extend .col;
+}
+
+.col-75 {
+	width: 75%;
+	@extend .col;
+}
+
+.col-morethan-4 {
+	display: flex;
+	margin: auto;
+	//    the width is the main container width DIVIDED by 
+	//    the amount of sections per row you have
+	width: $container-width / 3;
+}
+
+
+//container queries
+@media (min-width: 1200px) {
+	.container {
+		width: $container-width;
+	}
+}
+
+@media (max-width: 980px) {
+
+	.lf-menu__items--right, .lf-menu__items--left { float: none; }
+}
+
+@media (max-width: 767px) {
+	.col-half {
+		width: 100%;
+	}
+
+	.col-third {
+		width: 100%;
+	}
+
+	.col-quarter {
+		width: 50%;
+	}
+
+	.col-75 {
+		width: 100%;
+	}
+}
+
+@media (max-width: 480px) {
+	.col-quarter {
+		width: 100%;
+	}
+}
