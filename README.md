@@ -47,7 +47,7 @@ And so on. Much like a standard grid, you will need to wrap these in a container
 	   	<div class="row">
 	   		<div class="col-full">
 	   			<div class="content">
-	   			<p>Content here</p>
+	   				<p>Content here</p>
 	   			</div>
 	   		</div>
 	   	</div>
@@ -57,12 +57,12 @@ And so on. Much like a standard grid, you will need to wrap these in a container
 	   	<div class="row">
 	   		<div class="col-half">
 	   			<div class="content">
-	   			<p>Content here</p>
+	   				<p>Content here</p>
 	   			</div>
 	   		</div>
 	   		<div class="col-half">
 	   			<div class="content">
-	   			<p>Content here</p>
+	   				<p>Content here</p>
 	   			</div>
 	   		</div>
 	   	</div>
@@ -72,7 +72,19 @@ And so on... <div class="content"> has a default padding of 20px.
 
 1A. Flex Grid
 
-Using the flex grid/columns is the same HTML structure as the standard grid. For the flex grid to work, you simply divide your container width by how many items you have per row, and define the width in pixels. 
+Using the flex grid/columns is the same HTML structure as the standard grid. However you need to have the .row-flex class like so:
+
+    <div class="container">
+	   	<div class="row row-flex">
+	   		<div class="col-flex">
+	   			<div class="content">
+	   				<p>Content here</p>
+	   			</div>
+	   		</div>
+	   	</div>
+	</div>
+
+For the flex grid to work, you simply divide your container width by how many items you have per row, and define the width in pixels. 
 
 For example, if you have a container of 1200px, and you have 3 items per row, you would set a width of 400px to the flex column. So it would change to:
 
