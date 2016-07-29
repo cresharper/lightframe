@@ -89,13 +89,13 @@ The SASS file does the math for you on line 71 in dev/scss/_lightframe.scss.
 2. Navigation 
 
     <nav class="lf-menu">
-		<ul class="lf-menu__items">
-			<li><a href="">Item 1</a></li>
-			<li><a href="">Item 2</a></li>
-			<li><a href="">Item 3</a></li>
-			<li><a href="">Item 4</a></li>
-		</ul>
-	</nav>
+        <ul class="lf-menu__items">
+            <li><a href="">Item 1</a></li>
+            <li><a href="">Item 2</a></li>
+            <li><a href="">Item 3</a></li>
+            <li><a href="">Item 4</a></li>
+        </ul>
+    </nav>
 
 Add the prefix of "--right" or "--left" to either of the children of <nav class="lf-menu"> to float items in their respective directions.  
 
