@@ -58,6 +58,7 @@ body, html {margin: 0; padding: 0;}
     padding-left: 15px;
     margin-right: auto;
     margin-left: auto;
+    clear: both;
 }
 
 .row-flex { display: flex; -webkit-flex-flow: row wrap; }
