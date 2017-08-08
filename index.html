@@ -5,9 +5,11 @@
 
 		<title>LIGHTFRAME</title>
 
-    <!-- <link rel="stylesheet" href="../build/css/styles.css"> -->
+    <link href="https://fonts.googleapis.com/css?family=Mrs+Sheppards|Muli|Sedgwick+Ave" rel="stylesheet">
 
     <link rel="stylesheet" href="../css/lightframe.css">
+
+    <link rel="stylesheet" href="../build/css/styles.css">
 
 		<script src="http://code.jquery.com/jquery-1.10.2.js"></script>
 
@@ -17,12 +19,11 @@
 <script src="../build/js/functions.js"></script>
 <!-- cheap reset, some cheap styles for demo -->
 <style type="text/css">
-body {margin: 0;background: grey;}
+body {margin: 0;background: #f1f1f1;font-family: 'Muli', sans-serif;}
 h2 { text-align: center; }
-p {background-color: pink;}
 
 /*The Modified Column width - modfications are done via multiple classes. Refer to read me for more info*/
-.lf-menu__logo { font-size: 65px; color: #fff; font-family: sans-serif; }
+.lf-menu__logo { font-size: 45px; color: #fff; font-family: 'Sedgwick Ave', cursive; }
 .col-flex-ex2 {width: 200px;}
 .footer-text{ color: #fff; font-family: sans-serif; }
 </style>
@@ -34,7 +35,7 @@ p {background-color: pink;}
 
 
 	<nav class="lf-menu">
-		<h1 class="lf-menu__logo">LIGHTFRAME</h1>	
+		<h1 class="lf-menu__logo">lightframe</h1>	
 		<ul class="lf-menu__items lf-menu__items--right">
 			<li><a href="">Item 1</a></li>
 			<li><a href="">Item 2</a></li>
@@ -43,6 +44,45 @@ p {background-color: pink;}
 		</ul>
 	</nav>
 
+	<section class="hero-section">
+		<h1>Simple CSS framework to build fast landing pages</h1>
+		<div class="hero-section--links">
+			<a download="#">Download</a>
+			<a href="#">Docs</a>
+		</div>
+	</section>
+
+	<section class="feature-overview">
+		<div class="container container--hero-section">
+	   	<div class="row">
+	   		<div class="col-third">
+	   			<div class="content">
+	   			<h3>section 1</h3>
+	   			<p>Excepteur sint occaecat cupidatat non
+	   			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	   			</div>
+	   		</div>
+	   		<div class="col-third">
+	   			<div class="content">
+	   			<h3>section 2</h3>
+	   			<p>Excepteur sint occaecat cupidatat non
+	   			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	   			</div>
+	   		</div>
+	   		<div class="col-third">
+	   			<div class="content">
+	   			<h3>section 3</h3>
+	   			<p>Excepteur sint occaecat cupidatat non
+	   			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	   			</div>
+	   		</div>
+	   	</div>
+	   </div>
+	</section>
+	
+	<div class="container">
+		<h2 class="main-header">Examples</h2>
+	</div>
 	   
 	   <div class="container">
 	   <h2>Full Container - Testing the Build</h2>
