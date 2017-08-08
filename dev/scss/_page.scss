@@ -1,11 +1,6 @@
-section {
-	padding-top: 5rem;
-	padding-bottom: 5rem;
-}
-
 .hero-section {
 	text-align: center;
-    padding-top: 15rem;
+    padding-top: 8rem;
 
     h1 {
     	padding-bottom: 5rem;
@@ -31,4 +26,25 @@ section {
 
 .container--hero-section {
 	padding-top: 10rem;
+}
+
+.lf-footer {
+	height: 50px;
+}
+
+.footer-text {
+	padding: 1em;
+	vertical-align: middle;
+}
+
+@media (max-width: 767px) {
+	.lf-menu__items {display:none;}
+
+	.lf-menu__logo {
+		text-align: center !important;
+	}
+
+	.hero-section--links {
+		display: grid;
+	}
 }

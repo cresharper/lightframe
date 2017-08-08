@@ -1,16 +1,16 @@
 //menu/navigation
 
 .lf-menu {
-	position: fixed;
 	top: 0;
 	left: 0;
 	padding: 1em;
 	width: 100%;
-	background: $main-color;
+	background: none;
 }
 
 .lf-menu__logo {
 	display: inline;
+	color: $main-color;
 }
 
 .lf-menu__items {
@@ -50,4 +50,8 @@
 
 @media (max-width: 767px) {
 	.lf-menu__items {display:none;}
+
+	.lf-menu__logo {
+		text-align: center !important;
+	}
 }
