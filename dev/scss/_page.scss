@@ -1,6 +1,6 @@
 .hero-section {
 	text-align: center;
-    padding-top: 8rem;
+    padding-top: 5rem;
 
     h1 {
     	padding-bottom: 5rem;
@@ -8,7 +8,8 @@
     }
 
     .main-header {
-    	font-size: 35px;
+    	font-size: 45px;
+    	text-decoration: underline;
     }
 
     a {
@@ -22,6 +23,16 @@
 			background-color: #229be2;
     	}
     }
+}
+
+.container {
+	img {
+		border-radius: 100%;
+	}
+}
+
+.content--centered {
+	text-align: center;
 }
 
 .container--hero-section {
